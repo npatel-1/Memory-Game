@@ -62,17 +62,11 @@ function startGame(){
     //the lists in the html will then return the id
     shuffledArray[i].innerHTML = shuffledArray[i].id;
     //the pack will then add the list
-<<<<<<< HEAD
-    pack.appendChild(shuffledArray[i])
-  }
-
-=======
     console.log(pack);
     pack.appendChild(shuffledArray[i]);
 
   }
 
->>>>>>> matching-cards
   console.log(tempArray);
 }
 //reset the moves
@@ -124,7 +118,7 @@ function unmatched(){
   setTimeout(function(){
     openedCards[0].classList.remove
   })
->>>>>>> matching-cards
+
 }
 
 // $('.btnRestart').click(function() {
