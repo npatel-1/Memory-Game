@@ -62,6 +62,7 @@ function startGame(){
     //the lists in the html will then return the id
     shuffledArray[i].innerHTML = shuffledArray[i].id;
     //the pack will then add the list
+    console.log(pack);
     pack.appendChild(shuffledArray[i])
   }
 
