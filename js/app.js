@@ -97,22 +97,6 @@ function cardOpen() {
   openCards.push(this);
   var length = openCards.length;
   if (length === 2) {
-    // run match fuction
-  }
-=======
-
-//toggles open and show class to display opencards
-var displayCard = function(){
-  this.classList.toggle("open");
-  this.classList.toggle("show");
-  this.classList.toggle("disabled");
-}
-
-// opened cards are added to openCards list and is then checked to see if cards match
-function cardOpen() {
-  openCards.push(this);
-  var length = openCards.length;
-  if (length === 2) {
     moveCounter();
     if (openCards[0].type === openCards[1].type) {
         matched();
