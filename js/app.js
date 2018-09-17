@@ -62,7 +62,7 @@ function startGame(){
     //the lists in the html will then return the id
     shuffledArray[i].innerHTML = shuffledArray[i].id;
     //the pack will then add the list
-    pack.appendChild(shuffledArray[i])
+    pack.appendChild(shuffledArray[i]);
   }
 
   console.log(tempArray);
@@ -96,6 +96,23 @@ function cardOpen() {
     }
   }
 };
+
+//this is for when cards match
+function matched(){
+  openCards[0].classList.add("match");
+  openCards[1].classList.add("match");
+  openCards[0].classList.remove("show", "open");
+  openCards[1].classList.remove("show", "open");
+  openCards = [];
+
+}
+
+//this is for when cards don't match
+function unmatched(){
+  openedCards[0].classList.add("unmatched");
+  openedCards[1].classList.add("unmatched");
+  disable();
+}
 
 // $('.btnRestart').click(function() {
 //   //window.location.reload(true);
