@@ -77,7 +77,6 @@ second = 0;
 minutes = 0;
 var timer = document.querySelector(".time");
 timer.innerHTML = "0 mins 0 secs";
-<<<<<<< HEAD
 
 //toggles open and show class to display opencards
 var displayCard = function(){
