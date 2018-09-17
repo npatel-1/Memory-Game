@@ -114,9 +114,9 @@ function unmatched(){
   openedCards[0].classList.add("unmatched");
   openedCards[1].classList.add("unmatched");
   disable();
-  setTimeout(function(){
-    openedCards[0].classList.remove
-  })
+  // setTimeout(function(){
+  //   openedCards[0].classList.remove
+  // })
 }
 
 // $('.btnRestart').click(function() {
