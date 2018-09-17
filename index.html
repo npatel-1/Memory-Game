@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="js/app.js" charset="utf-8"></script>
   <link rel="stylesheet" href="/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
 </head>
 <body>
@@ -15,13 +20,33 @@
       <h1>Fortnite Memory Game</h1>
     </header>
 
-    <section>
+    <section class="panel">
       <span class="tries">0</span> Tries
-
       <div class="time">
 
       </div>
+      <div class="btnRestart" onclick=startGame()>
+        <button>Restart<br><i class="fa fa-refresh"></i></button>
+      </div>
     </section>
+    <ul class="pack" id="card-pack">
+      <!-- <li class="card" color="grey"></li>
+      <li class="card" color="red"></li>
+      <li class="card match" color="green"></li>
+      <li class="card" color="black"></li>
+      <li class="card" color="orange"></li>
+      <li class="card match" color="pink"></li>
+      <li class="card" color="purple"></li>
+      <li class="card" color="grey"></li>
+      <li class="card" color="blue"></li>
+      <li class="card" color="black"></li>
+      <li class="card" color="green"></li>
+      <li class="card" color="red"></li>
+      <li class="card open show" color="pink"></li>
+      <li class="card" color="orange"></li>
+      <li class="card" color="blue"></li>
+      <li class="card" color="purple"></li> -->
+    </ul>
   </div>
 </body>
 </html>
