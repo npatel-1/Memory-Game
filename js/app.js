@@ -43,7 +43,7 @@ document.body.onload = startGame();
 function startGame(){
   //this is where the cards will be stored
   let tempArray = [];
-  console.log(card);
+  // console.log(card);
   //loop is created for the lists
   for (var i = 0; i < 16; i++) {
     //cardEl is declared and an list element is created
@@ -62,7 +62,9 @@ function startGame(){
     //the lists in the html will then return the id
     shuffledArray[i].innerHTML = shuffledArray[i].id;
     //the pack will then add the list
+    console.log(pack);
     pack.appendChild(shuffledArray[i]);
+
   }
 
   console.log(tempArray);
@@ -112,6 +114,9 @@ function unmatched(){
   openedCards[0].classList.add("unmatched");
   openedCards[1].classList.add("unmatched");
   disable();
+  setTimeout(function(){
+    openedCards[0].classList.remove
+  })
 }
 
 // $('.btnRestart').click(function() {
