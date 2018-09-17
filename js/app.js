@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function(){
     return cardArray;
 };
 //cards are shuffled when the page reloads
-document.body.onload = startGame();
+document.body.onload = startGame(".pack");
 //the function to restart the game
 function startGame(){
   //this is where the cards will be stored
