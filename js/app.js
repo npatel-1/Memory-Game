@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let modal = document.getElementById("popup1")
 
   //array for opened cards that have been clicked on
-  var openCards = [];
+  let openCards = [];
   // declaring the variables
   function shuffle(cardArray) {
     var currentIndex = cardArray.length;
